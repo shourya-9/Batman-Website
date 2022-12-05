@@ -1,0 +1,82 @@
+.animated-table {
+    width: 150px;
+    height: 70px;
+    background-color: gold;
+    border-radius: 3px;
+}
+
+.animated-table:hover {
+    animation: playGif 1s forwards;
+    background-color: white;
+}
+
+
+@keyframes playGif {
+    from {background-image: url(images/bats.gif);}
+    to {background-image: none;}
+}
+
+body{
+    background-image: url(images/back.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.red{
+    color: red;
+}
+
+.gold{
+    color: gold;
+}
+
+.white{
+    color: white;
+}
+
+.round{
+    border-radius: 15px;
+}
+
+
+.active, .td:hover {
+  background-color: #666;
+  color: white;
+}
+a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+}
+
+html{
+    scroll-behavior: smooth
+}
+.table a
+{
+    display:block;
+    text-decoration:none;
+}
+
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
+}
